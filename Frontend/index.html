@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Downloader</title>
+</head>
+<body>
+  <label for="link">Enter the link: </label>
+    <input type="text" name="link" id="link"> <br>
+    <button id="btn">Submit</button>
+
+    <video controls id="my-video"></video>
+    <button id="play">Play Video</button> <br>
+    <p id="messageFromServer"></p>
+    <a href="" class="download" download>Download</a>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <!-- <script>
+    let socket = io();
+
+    // code
+    const btn = document.getElementById("btn").addEventListener("click", () =>{
+    let link = { link: document.getElementById("link").value };
+
+    console.log(link);
+    fetch('http://localhost:3000/data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(link),
+      })
+        .then((response) => response.json())
+        .then((response) => console.log(response));
+    link = "";
+})
+// fetch video
+const video = document.getElementById("my-video");
+const download = document.querySelector(".download");
+
+document.getElementById("play").addEventListener("click", () =>{
+    fetch('http://localhost:3000/video')
+    .then((response) => response.blob())
+    .then((videoBlob) => {
+    video.src = URL.createObjectURL(videoBlob);
+    download.href = URL.createObjectURL(videoBlob);
+    });
+}); -->
+  </script>
+</body>
+</html>

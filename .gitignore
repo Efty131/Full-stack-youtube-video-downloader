@@ -1,0 +1,42 @@
+# Ignore files that contain sensitive information
+*.key
+*.pem
+*.crt
+*.csr
+
+# Ignore build artifacts
+bin/
+obj/
+out/
+
+# Ignore temp files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Ignore IDEs and text editor specific files
+*.suo
+*.user
+*.DS_Store
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore package manager files
+package-lock.json
+yarn.lock
+node_modules/
+
+# Ignore database files
+*.db
+*.sqlite
